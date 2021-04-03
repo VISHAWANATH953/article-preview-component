@@ -1,0 +1,117 @@
+@import 'compomets/_var';
+@import 'compomets/_utility';
+
+.moved{
+    display: none;
+}
+
+article{
+    position: relative;
+    width: 90%;
+    height: 80vh;
+    overflow: hidden;
+    border-radius: 1.25rem;
+    margin-bottom: .5rem;
+    section.imgbox{
+        width: 100%;
+        height:32vh;
+    }
+    section.middle{
+        h3{
+            margin: 2.5rem;
+            text-align: justify;
+            font-size: 1.7rem;
+        }
+        p{    
+            margin: .8rem 2.5rem;
+            font-size: 1.25rem;
+            text-align: justify;
+            
+        }
+    }
+    section.profile{
+        width: 100%;
+        div.move{
+            display: flex;
+            height: 7.5rem;
+            width: 100%;
+            position: absolute;
+            bottom: 0;  
+            align-items: center;
+            flex-flow: row nowrap;
+            div.profile__imgbox{
+                margin: 0 1.5rem 1rem 2.8rem;
+                overflow: hidden;
+                width: 5rem;
+                height: 5rem;
+                border-radius: 50%;
+            }
+            div.info{
+                margin-bottom: 1rem;
+                h4{
+                    font-size: 1.3rem;
+                }
+                p{
+                    font-size: 1.2rem;
+                }
+            }
+        }
+        div.moved{
+            transition: all 0.25s ease-out;
+            display: flex;
+            width: 100%;
+            align-items: center;
+            position: absolute;
+            height: 7.5rem;
+            bottom: 0;
+            right: -100%;
+            background: $DarkGrayishBlue;
+            h6{
+                text-transform: uppercase;
+                font-size: 2rem;
+                color: #fff;
+                letter-spacing: .5rem;
+                margin: 0 1.5rem;
+            }
+            .imgbox1,.imgbox2,.imgbox3{
+                width: 2.5rem;
+                height: 2.5rem;
+                margin: 0 .5rem;
+                img{
+                    fill: #fff;
+                }
+            }
+
+        }
+    }
+    
+    div.profile__share{
+        position: absolute;
+        bottom: 0;
+        margin-bottom: 2rem;
+        right: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        width: 3.5rem;
+        height: 3.5rem;
+        border-radius: 50%;
+        background: $LightGrayishBlue;
+        cursor: pointer;
+        img{
+            width: 50%;
+            height: 43%;
+        }
+    }
+    .zero{
+        transform: translateX(-100%);
+    }
+}
+
+
+
+
+
+
+@import 'compomets/_media';
