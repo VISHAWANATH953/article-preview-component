@@ -198,4 +198,30 @@ article .zero {
   -webkit-transform: translateX(-100%);
           transform: translateX(-100%);
 }
+
+@media screen and (min-width: 992px) {
+  html {
+    font-size: 70% !important;
+  }
+  article {
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-flow: row nowrap !important;
+            flex-flow: row nowrap !important;
+    width: 60% !important;
+    height: 50vh !important;
+  }
+  article .imgbox {
+    height: 100% !important;
+    width: 40vw !important;
+  }
+  article .middleup {
+    position: relative !important;
+    width: 60vw !important;
+    height: 100% !important;
+    display: -ms-grid;
+    display: grid;
+    place-items: center;
+  }
+}
 /*# sourceMappingURL=index.css.map */

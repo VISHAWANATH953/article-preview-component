@@ -1,0 +1,20 @@
+@media screen and (min-width:992px) {
+    html{
+        font-size: 70% !important;
+    }
+    article{
+        flex-flow: row nowrap !important;
+        width: 60% !important;
+        height: 50vh !important;
+        .imgbox{
+            height: 100% !important;
+            width: 40vw !important;
+        }.middleup{
+            position: relative !important;
+            width: 60vw !important;
+            height: 100% !important;
+            display: grid;
+            place-items: center;
+        }
+    }
+}
